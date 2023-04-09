@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <title>OpenAI Quickstart</title>
+  <title>Play Chess</title>
   <link
     rel="shortcut icon"
     href="{{ url_for('static', filename='knight.png') }}"
@@ -12,7 +12,7 @@
   <img src="{{ url_for('static', filename='knight.png') }}" class="icon" />
   <h3>Play Chess with Davinci</h3>
   <form action="/" method="post">
-    <input type="text" name="Your move" placeholder="Enter a chess move (e.g., B3)" required />
+    <input type="text" name="animal" placeholder="Enter a chess move (e.g., B3)" required />
     <input type="submit" value="Generate move" />
   </form>
   {% if result %}
